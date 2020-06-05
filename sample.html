@@ -1,9 +1,132 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+  <head>
+    <meta charset=UTF-8>
+    <title>Results Page</title>
+    <script>
+    function s()
+    {
+    let x=document.getElementById("pin").value
+    let y=document.getElementById("sem")
+    let z=y.options[y.selectedIndex].text
+    let l=x.length;
+    if(x=="16551A0460"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=7.88}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=7.72}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="confidential"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x=="17555A0417"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=8.00}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=7.59}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="first subject names nerchuko"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x=="16551A0456"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=7.84}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=7.35}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="Mundu exams rayara"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x=="16551A0424"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=9.28}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=9.35}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="As usaual 9.** sgpa"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x=="16551A0463"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=8.68}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=8.93}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="Ne kanty thopu evaru leru"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x=="17555A0412"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=8.32}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=7.91}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="Blink ra blink"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x=="16551A0413"){
+    if(z=="sgpa of sem-7"){
+    document.getElementById("result").value=7.96}
+    else if(z=="cgpa up to sem-7"){
+    document.getElementById("result").value=7.69}
+    else if(z=="sem-8"){
+    document.getElementById("result").value="congratulations..Student of the year"}
+    else{
+    document.getElementById("result").value="You haven't chosen any sem"}
+    }
+    else if(x==""){
+    document.getElementById("result").value="please eneter your pin no"}
+    else if(l && l!=10){
+    document.getElementById("result").value="Your pin no is invalid"}
+    else{
+    document.getElementById("result").value="Sorry ur pin no is not updated"} 
+    }
+    </script>
+    <style>
+    *{
+      font-family: "Time New Roman"
+      }
+      img{
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:20%;
+      }
+      #gg{
+      color:yellow;
+      }
+      body  {
+      background-image: url("https://www.ecopetit.cat/wpic/mpic/1-14195_4k-green-blurred-background-hd-desktop-wallpaper-blur.jpg");
+      background-repeat:no-repeat;
+      background-size:cover
+      }
+      </style>
+    <body>
+      <h1 style="color:pink; text-align:center; font-size:40px">WELCOME</h1>
+      <img src="https://www.civilhindipedia.com/upload/notification/1535531929-notification.jpg">
+      <p id="gg"><b>Please Enter Your Pin Number :</b> </p>
+      <form action="">
+      <fieldset>
+       Pin no:&nbsp<input id="pin" type="text"  placeholder="Enter Your college id here" required pattern="[A-Z0-9]{10}" title="please enter your 10 digit pin number">   
+        <select id="sem">
+        <option></option>
+        <option>sgpa of sem-7</option>
+        <option>cgpa up to sem-7</option>
+        <option>sem-8</option>
+        </select>
+        <input type="button" value="check Your Result" onclick="s()"><br><br>
+        Result:&nbsp<input type="text" size="25" id="result" placeholder="Your results are dispalyed here">
+        </fieldset>
+      </form>
+      <p><strong>Note : </strong> If your pin number is not updated then <a href="https://gietautonomousexams.com/">click here</a></p>
+      <br><br><br><br><br><br><br>
+      <p style="text-align: center;">&copyPavanKumar</p>
+    </body>
+  </head>
 </html>
